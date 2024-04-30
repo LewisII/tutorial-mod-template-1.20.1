@@ -28,7 +28,7 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(4f), UniformIntProvider.create(4, 7)));
     //public static final Block SOUND_BLOCK = registerBlock("sound_block",new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
     private static Block registerBlock(String name, Block block) {
-        BlockItem temp = registerBlockItem(name, block);
+        //BlockItem temp = registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);
     }
     private static BlockItem registerBlockItem(String name, Block block) {
